@@ -1,0 +1,20 @@
+﻿<Window x:Class="RockPaperScissorsGame.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RockPaperScissorsGame"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <RadioButton Name="RockButton" Content="Rock" HorizontalAlignment="Left" Margin="180,121,0,0" VerticalAlignment="Top" Checked="RockButton_Checked"/>
+        <RadioButton Name="PaperButton" Content="Paper" HorizontalAlignment="Left" Margin="352,121,0,0" VerticalAlignment="Top" Checked= "PaperButton_Checked"/>
+        <RadioButton Name="ScissorButton" Content="Scissors" HorizontalAlignment="Left" Margin="496,124,0,0" VerticalAlignment="Top" Checked="ScissorsButton_Checked"/>
+        <TextBlock HorizontalAlignment="Left" Margin="344,58,0,0" TextWrapping="Wrap" Text="Select an Option" VerticalAlignment="Top" Width="120"/>
+        <Button Content="Final Decision" HorizontalAlignment="Left" Margin="331,197,0,0" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-0.173,0.939" Click="Button_Click"/>
+        <TextBlock HorizontalAlignment="Left" Margin="352,289,0,0" TextWrapping="Wrap" Text="ScoreBoard" VerticalAlignment="Top" Height="26" Width="72"/>
+        <TextBlock Name="ScoreBox" HorizontalAlignment="Left" Margin="306,320,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="230" Height="63"/>
+        <Button Content="Reset Score" HorizontalAlignment="Left" Margin="630,361,0,0" VerticalAlignment="Top" Width="96" Click="Button_Click_1"/>
+
+    </Grid>
+</Window>
